@@ -38,14 +38,21 @@
                                     <constraint firstAttribute="height" constant="184" id="Jpa-n6-DAU"/>
                                 </constraints>
                             </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kkt-YA-i2X">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Kkt-YA-i2X" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IDm-xv-2Ew"/>
                             <constraint firstItem="ELM-qR-CdE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Jis-kX-ZKZ"/>
                             <constraint firstItem="S3X-18-OF9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NRl-aJ-agG"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="S3X-18-OF9" secondAttribute="bottom" id="Ovo-La-cUu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kkt-YA-i2X" secondAttribute="bottom" id="RTb-4t-kR2"/>
                             <constraint firstAttribute="trailing" secondItem="S3X-18-OF9" secondAttribute="trailing" id="lSp-7t-k8p"/>
+                            <constraint firstAttribute="trailing" secondItem="Kkt-YA-i2X" secondAttribute="trailing" id="oiq-DL-rs7"/>
                             <constraint firstAttribute="trailing" secondItem="ELM-qR-CdE" secondAttribute="trailing" id="u2C-lK-e8K"/>
+                            <constraint firstItem="Kkt-YA-i2X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xwG-Ib-gRq"/>
                         </constraints>
                     </view>
                 </viewController>
