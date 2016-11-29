@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sky" translatesAutoresizingMaskIntoConstraints="NO" id="8XJ-S2-HNY">
@@ -26,35 +26,40 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="ELM-qR-CdE">
-                                <rect key="frame" x="193" y="28" width="182" height="93"/>
+                                <rect key="frame" x="232" y="28" width="182" height="93"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="93" id="3Bd-GZ-ZFZ"/>
                                     <constraint firstAttribute="width" constant="182" id="vNx-YH-tPC"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mountains" translatesAutoresizingMaskIntoConstraints="NO" id="S3X-18-OF9">
-                                <rect key="frame" x="0.0" y="483" width="375" height="184"/>
+                                <rect key="frame" x="0.0" y="552" width="414" height="184"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="184" id="Jpa-n6-DAU"/>
                                 </constraints>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kkt-YA-i2X">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kkt-YA-i2X">
+                                <rect key="frame" x="77" y="0.0" width="260" height="736"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="UdZ-dS-YJe"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Kkt-YA-i2X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EMP-my-BOw"/>
                             <constraint firstItem="Kkt-YA-i2X" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IDm-xv-2Ew"/>
                             <constraint firstItem="ELM-qR-CdE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Jis-kX-ZKZ"/>
                             <constraint firstItem="S3X-18-OF9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NRl-aJ-agG"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="S3X-18-OF9" secondAttribute="bottom" id="Ovo-La-cUu"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kkt-YA-i2X" secondAttribute="bottom" id="RTb-4t-kR2"/>
                             <constraint firstAttribute="trailing" secondItem="S3X-18-OF9" secondAttribute="trailing" id="lSp-7t-k8p"/>
-                            <constraint firstAttribute="trailing" secondItem="Kkt-YA-i2X" secondAttribute="trailing" id="oiq-DL-rs7"/>
                             <constraint firstAttribute="trailing" secondItem="ELM-qR-CdE" secondAttribute="trailing" id="u2C-lK-e8K"/>
-                            <constraint firstItem="Kkt-YA-i2X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xwG-Ib-gRq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="Kkt-YA-i2X" id="aPG-xh-ukE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
